@@ -1,4 +1,9 @@
 name: AZ
+on:
+  push:
+    branches:
+      - main
+      
 jobs:
   set-up-azure-resources:
     runs-on: ubuntu-latest
