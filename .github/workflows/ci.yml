@@ -32,5 +32,6 @@ jobs:
          
       - uses: actions/upload-artifact@v3
         with:
-          name: remark-lint-report
-          path: public/
+            name: my-artifact
+            path: my_file.txt
+            retention-days: 10
