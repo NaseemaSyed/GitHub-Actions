@@ -1,18 +1,19 @@
+name: AZ
 jobs:
   set-up-azure-resources:
     runs-on: ubuntu-latest
 
-    if: contains(github.event.pull_request.labels.*.name, 'spin up environment')
-
-    ...
+    
+    if: contains(github.event.pull_request.labels.*.name, 'spin up environment')...
 
   destroy-azure-resources:
     runs-on: ubuntu-latest
 
     if: contains(github.event.pull_request.labels.*.name, 'destroy environment')
-
-    ...
-   steps:
+...
+    
+   
+  steps:
   - name: Checkout repository
     uses: actions/checkout@v2
 
